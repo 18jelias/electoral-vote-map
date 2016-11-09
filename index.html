@@ -532,7 +532,7 @@ d3.json("cb_2015_us_state_500k.topojson",function(error,geodata) {
     .on("click",clicked);
 
     recount();
-    document.getElementById("remaining").innerHTML = "Trump needs " + (270 - repCount -1) + " more electoral votes to win, and Clinton needs " +
+    document.getElementById("remaining").innerHTML = "Trump needs " + (270 - repCount + 1) + " more electoral votes to win, and Clinton needs " +
                                                       (270 - demCount) + " more electoral votes to win";
 
 });
