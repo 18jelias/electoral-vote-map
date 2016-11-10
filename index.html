@@ -56,7 +56,7 @@ div.tooltip {
 <p id="text">It only takes 270 to win.</p>
 <p id="remaining"></p>
 <script>
-
+//Code referenced from mapstarter.com
 var dict = [
   {
     "name": "California",
@@ -516,9 +516,9 @@ d3.json("cb_2015_us_state_500k.topojson",function(error,geodata) {
 
           if(d.properties.NAME === dict[i].name) {
             if(dict[i].rep) {
-                return 'rgb(255,0,0)';
+                return 'rgb(204, 0, 0)';
             } else if(dict[i].dem) {
-                return 'rgb(0,0,255)';
+                return 'rgb(0,0,153)';
             } else {
                 return 'rgb(196,230,233)';
             }
